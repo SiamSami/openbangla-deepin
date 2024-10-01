@@ -4,8 +4,7 @@ git clone --recursive https://github.com/OpenBangla/OpenBangla-Keyboard.git
 cd OpenBangla-Keyboard
 git checkout develop
 git submodule update
-cp ../CMakeLists.txt ./
 mkdir build && cd build
-cmake ..
+cmake .. -DENABLE_IBUS=OFF -DENABLE_FCITX=ON
 make
 sudo make install
