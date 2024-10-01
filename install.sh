@@ -5,6 +5,6 @@ cd OpenBangla-Keyboard
 git checkout develop
 git submodule update
 mkdir build && cd build
-cmake .. -DENABLE_IBUS=OFF -DENABLE_FCITX=ON
+cmake .. -DCMAKE_INSTALL_PREFIX="/usr" -DENABLE_FCITX=ON
 make
 sudo make install
