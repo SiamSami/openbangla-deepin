@@ -1,23 +1,29 @@
-It's a simple script to install OpenBangla with fcitx support on Deepin
-# How to use
-Run the following commands to install OpenBangla on Deepin
+# How to set up OpenBangla on Deepin
+### Step 1: Installing OpenBangla
+1) Run the following commands
 ```
-git clone https://github.com/SiamSami/openbangla-deepin.git
-cd openbangla-deepin
-chmod +x install.sh
-./install.sh
+sudo apt update
+sudo apt install git libfcitx5core-dev cmake libzstd-dev build-essential rustc cargo qtbase5-dev qtbase5-dev-tools
+git clone --recursive https://github.com/OpenBangla/OpenBangla-Keyboard.git
+cd OpenBangla-Keyboard
+git checkout develop
+git submodule update
+mkdir build && cd build
+cmake .. -DCMAKE_INSTALL_PREFIX="/usr" -DENABLE_FCITX=ON
+make
+sudo make install
 ```
-Afterwards, restart your PC.
+2) Restart your PC.
+### Step 2: Setting up fcitx5
+1) Goto `Control Center-> Keyboard and Language-> Input Method-> Advanced Settings`
+2) Then **uncheck** `Only Show Current Language`
+3) Then select `OpenBangla Keyboard` from the box on the right and add it to the box on the left
+4) Click Apply and then close
+5) Click on `+` symbol next to `Manage Input Methods`
+6) Now search for `বাংলা-Bengali`, then select `OpenBangla Keyboard` and add it
+7) You can now type in Bengali.
 
-Goto `Control Center-> Keyboard and Language-> Input Method-> Advanced Settings` \
-Then uncheck `Only Show Current Language` \
-Then select `OpenBangla Keyboard` from the box on the right and add it to the box on the left \
-Click Apply and then close \
-Click on `+` symbol next to `Manage Input Methods` \
-Now search for `বাংলা-Bengali`, then select `OpenBangla Keyboard` and add it \
-You can now type in Bengali.
-
-You can also take a look at this video
+You can also take a look at this video for step 2:
 
 https://github.com/user-attachments/assets/aedeaad8-c6b3-40be-a49d-2875ad903ffa
 
