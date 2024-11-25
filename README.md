@@ -3,7 +3,7 @@
 1) Run the following commands
 ```
 sudo apt update
-sudo apt install git libfcitx5core-dev cmake libzstd-dev build-essential rustc cargo qtbase5-dev qtbase5-dev-tools
+sudo apt install git libfcitx5core-dev cmake libzstd-dev build-essential rustc cargo qtbase5-dev
 git clone --recursive https://github.com/OpenBangla/OpenBangla-Keyboard.git
 cd OpenBangla-Keyboard
 git checkout develop
