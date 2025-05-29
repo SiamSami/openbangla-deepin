@@ -11,7 +11,9 @@ git submodule update
 mkdir build && cd build
 cmake .. -DCMAKE_INSTALL_PREFIX="/usr" -DENABLE_FCITX=ON
 make
+sudo deepin-immutable-ctl admin exec -- bash # Run this code if you have an immutable system
 sudo make install
+exit
 ```
 2) Restart your PC.
 ### Step 2: Setting up fcitx5
