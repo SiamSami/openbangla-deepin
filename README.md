@@ -17,7 +17,8 @@ exit
 ```
 2) Restart your PC.
 ### Step 2: Setting up fcitx5
-1) Goto `Control Center-> Keyboard and Language-> Input Method-> Advanced Settings`
+#### a): On Deepin V23
+1) Go to `Control Center-> Keyboard and Language-> Input Method-> Advanced Settings`
 2) Then **uncheck** `Only Show Current Language`
 3) Then select `OpenBangla Keyboard` from the box on the right and add it to the box on the left
 4) Click Apply and then close
@@ -28,7 +29,11 @@ exit
 You can also take a look at this video for step 2:
 
 https://github.com/user-attachments/assets/aedeaad8-c6b3-40be-a49d-2875ad903ffa
-
+ ### b) On Deepin V25
+ 1) Go to Control Center -> Device -> Keyboard -> Input Methods
+ 2) Click on `Add input method`
+ 3) Select `OpenBangla Keyboard` and then click on `Add`
+ 4) You can now type in Bengali
 
 # Acknowledgements
 All credit goes to [OpenBangla-Keyboard](https://github.com/OpenBangla/OpenBangla-Keyboard) and [others](https://github.com/OpenBangla/OpenBangla-Keyboard?tab=readme-ov-file#acknowledgements)
